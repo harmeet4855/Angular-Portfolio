@@ -9,46 +9,56 @@ angular.module('portfolioApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ui.router'
+  'ui.router',
+  'angular-carousel'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     //delete $httpProvider.defaults.headers.common['X-Requested-With'];
     $urlRouterProvider.otherwise('/');
     $stateProvider
-      .state('home', {
+      .state('start', {
+        abstract: true,
         url: '/',
+        templateUrl: 'views/start.html',
+        controller: 'StartController',
+        controllerAs: 'startCtrl'
+      })
+      .state('start.home', {
+        url: '',
         templateUrl: 'views/home.html',
         controller: 'HomeController',
-        controllerAs: 'homeCtrl'
+        controllerAs: 'homeCtrl',
+        titlename: 'Highlights'
       })
-      .state('projects', {
-        url: '/projects',
+      .state('start.projects', {
+        url: 'projects',
         templateUrl: 'views/projects.html',
         controller: 'ProjectsController',
-        controllerAs: 'projectsCrl'
+        controllerAs: 'projectsCrl',
+        navigateUp: 'start.home',
+        titlename: 'Projects'
       })
-      .state('experience', {
-        url: '/experience',
+      .state('start.experience', {
+        url: 'experience',
         templateUrl: 'views/experience.html',
         controller: 'ExperienceController',
-        controllerAs: 'experienceCrl'
+        controllerAs: 'experienceCrl',
+        navigateUp: 'start.home',
+        titlename: 'Experience'
       })
-      .state('contact', {
-        url: '/contact',
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .state('index', {
-        url: '/',
+      .state('start.contact', {
+        url: 'contact',
         templateUrl: 'views/contact.html',
         controller: 'ContactController',
-        controllerAs: 'contactCrl'
-      })
-      .state('resume', {
-        url: '/resume',
-        templateUrl: 'views/resume.pdf'
+        controllerAs: 'contactCrl',
+        navigateUp: 'start.home',
+        titlename: 'Contact Me'
       });
 
-    // use the HTML5 History API
-    $locationProvider.html5Mode(true);
+    //// use the HTML5 History API
+    //$locationProvider.html5Mode({
+    //  enabled: true,
+    //  requireBase:false,
+    //  rewriteLinks: true
+    //});
   });

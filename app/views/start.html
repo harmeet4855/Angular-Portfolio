@@ -1,0 +1,68 @@
+<section layout="row" flex>
+  <md-sidenav class="md-sidenav-left md-whiteframe-z1" flex-lg="20" md-component-id="left"
+              md-is-locked-open="$mdMedia('gt-md')">
+    <md-list>
+      <md-list-item ng-click="startCtrl.home()" class="profile" >
+        <div layout="column">
+          <div layout="row">
+            <img ng-src="images/dp1.jpg" class="md-avatar" alt="{{}}"/>
+            <div layout="column">
+              <span class="profile-name">Harmeet Singh</span>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item ui-sref-active="active" ui-sref="start.experience" class="md-2-line">
+        <md-icon>card_travel</md-icon>
+        <div class="md-list-item-text" layout="column">
+          <h4>Experience</h4>
+        </div>
+      </md-list-item>
+      <md-list-item ui-sref-active="active" ui-sref="start.projects" class="md-2-line">
+        <md-icon>view_list</md-icon>
+        <div class="md-list-item-text" layout="column">
+          <h4>Projects</h4>
+        </div>
+      </md-list-item>
+      <md-list-item ng-click="startCtrl.resume()" class="md-2-line">
+        <md-icon>insert_drive_file</md-icon>
+        <div class="md-list-item-text" layout="column">
+          <h4>Resume</h4>
+        </div>
+      </md-list-item>
+      <md-list-item ui-sref-active="active" ui-sref="start.contact" class="md-2-line">
+        <md-icon>mail</md-icon>
+        <div class="md-list-item-text" layout="column">
+          <h4>Contact Me</h4>
+        </div>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+  <div class="content-container" flex>
+    <md-toolbar class="md-whiteframe-z1">
+      <div class="md-toolbar-tools">
+        <md-button ng-click="startCtrl.toggle()" class="md-icon-button" aria-label="Toggle" hide-gt-md>
+          <md-icon class="toolbar-icons">menu</md-icon>
+        </md-button>
+        <!--<md-button hide-md hide-sm hide-xs ng-if="startCtrl.hasNavigateUp()" ng-click="startCtrl.navigateUp()"-->
+                   <!--class="md-icon-button"-->
+                   <!--aria-label="Back">-->
+          <!--<md-icon class="toolbar-icons">arrow_back</md-icon>-->
+        <!--</md-button>-->
+        <h2>
+          <span>{{startCtrl.currentTitle}}</span>
+        </h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <div ui-view=""></div>
+  </div>
+</section>
+
+
+
+

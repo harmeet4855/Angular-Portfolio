@@ -1,0 +1,71 @@
+md-sidenav{
+  position: fixed !important;
+}
+
+.active {
+  border-right: 4px solid green;
+}
+
+md-toolbar {
+  background-color: rgba(255, 255, 255, 0.87) !important;
+  color: rgb(117, 117, 117) !important;
+}
+
+.toolbar-icons {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+
+md-list {
+  padding: 0px;
+}
+
+.profile > button {
+  padding-top: 17px !important;
+  padding-bottom: 17px !important;
+}
+
+.profile > button > div {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.md-avatar {
+  margin-top: 0px !important;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+md-list-item > a:hover, md-list-item > button:hover {
+  background-color: transparent !important;
+  border-right: 4px solid green;
+}
+
+md-list-item > a {
+  margin: 0px !important;
+}
+
+md-list-item > a > div {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+md-list-item > button > div {
+  padding-left: 10px;
+}
+
+md-grid-tile{
+  background-color: rgb(208, 208, 208);
+}
+
+/*media quries*/
+@media screen and (min-width: 1280px) and (max-width: 1620px) {
+  .content-container{
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1620px) {
+  .content-container{
+    margin-left: 320px;
+  }
+}
