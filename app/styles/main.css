@@ -2,8 +2,17 @@ md-sidenav{
   position: fixed !important;
 }
 
+.clickable{
+  cursor: pointer !important;
+}
+
+.clickable:focus{
+  cursor: pointer !important;
+  outline: none;
+}
+
 .active {
-  border-right: 4px solid green;
+  border-right: 4px solid #46A693;
 }
 
 md-toolbar {
@@ -13,6 +22,11 @@ md-toolbar {
 
 .toolbar-icons {
   color: rgba(0, 0, 0, 0.54) !important;
+}
+
+.navigate-up{
+  padding: 0px !important;
+  width: initial !important;
 }
 
 md-list {
@@ -36,8 +50,8 @@ md-list {
 }
 
 md-list-item > a:hover, md-list-item > button:hover {
-  background-color: transparent !important;
-  border-right: 4px solid green;
+  background-color: rgb(240, 243, 255) !important;
+  /*border-right: 4px solid #46A693;*/
 }
 
 md-list-item > a {
@@ -53,8 +67,23 @@ md-list-item > button > div {
   padding-left: 10px;
 }
 
+md-grid-list{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 md-grid-tile{
-  background-color: rgb(208, 208, 208);
+  background-size: contain;
+}
+
+/*.projects-type{*/
+  /*font-size: 30px;*/
+  /*font-weight: 300;*/
+/*}*/
+
+.projects-type-header{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*media quries*/

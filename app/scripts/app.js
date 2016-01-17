@@ -34,10 +34,60 @@ angular.module('portfolioApp', [
         url: 'projects',
         templateUrl: 'views/projects.html',
         controller: 'ProjectsController',
-        controllerAs: 'projectsCrl',
+        controllerAs: 'projectsCtrl',
         navigateUp: 'start.home',
         titlename: 'Projects'
       })
+      //INDIVIDUAL PROJECTS ---- start
+        .state('start.sigcloud', {
+          url: 'sigcloud',
+          templateUrl: 'views/projects/sigcloud.html',
+          controller: 'SigcloudController',
+          controllerAs: 'sigcloudCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Sigcloud'
+        })
+        .state('start.sociotags', {
+          url: 'sociotags',
+          templateUrl: 'views/projects/sociotags.html',
+          controller: 'SociotagsController',
+          controllerAs: 'sociotagsCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Sociotags'
+        })
+        .state('start.chatIo', {
+          url: 'chatIo',
+          templateUrl: 'views/projects/chat.io.html',
+          controller: 'ChatIoController',
+          controllerAs: 'chatIoCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Chat.io'
+        })
+        .state('start.flexflights', {
+          url: 'flexflights',
+          templateUrl: 'views/projects/flexflights.html',
+          controller: 'FlexflightsController',
+          controllerAs: 'flexflightsCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Flexflights'
+        })
+        .state('start.salsa', {
+          url: 'salsa',
+          templateUrl: 'views/projects/salsa.html',
+          controller: 'SalsaController',
+          controllerAs: 'salsaCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Salsa'
+        })
+        .state('start.techwebsite', {
+          url: 'techwebsite',
+          templateUrl: 'views/projects/techwebsite.html',
+          controller: 'TechwebsiteController',
+          controllerAs: 'techwebsiteCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Techniche Website'
+        })
+      //INDIVIDUAL PROJECTS ---- end
       .state('start.experience', {
         url: 'experience',
         templateUrl: 'views/experience.html',

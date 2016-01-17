@@ -1,6 +1,17 @@
 <section layout="row" flex>
   <md-sidenav class="md-sidenav-left md-whiteframe-z1" flex-lg="20" md-component-id="left"
               md-is-locked-open="$mdMedia('gt-md')">
+    <md-toolbar hide-gt-md class="md-whiteframe-z1">
+      <div class="md-toolbar-tools">
+        <md-button ng-if="startCtrl.hasNavigateUp()" ng-click="startCtrl.navigateUp()" class="md-icon-button"
+                   aria-label="Back">
+          <md-icon class="toolbar-icons">arrow_back</md-icon>
+        </md-button>
+        <h2>
+          <span>{{startCtrl.currentTitle}}</span>
+        </h2>
+      </div>
+    </md-toolbar>
     <md-list>
       <md-list-item ng-click="startCtrl.home()" class="profile" >
         <div layout="column">
@@ -48,11 +59,11 @@
         <md-button ng-click="startCtrl.toggle()" class="md-icon-button" aria-label="Toggle" hide-gt-md>
           <md-icon class="toolbar-icons">menu</md-icon>
         </md-button>
-        <!--<md-button hide-md hide-sm hide-xs ng-if="startCtrl.hasNavigateUp()" ng-click="startCtrl.navigateUp()"-->
-                   <!--class="md-icon-button"-->
-                   <!--aria-label="Back">-->
-          <!--<md-icon class="toolbar-icons">arrow_back</md-icon>-->
-        <!--</md-button>-->
+        <md-button hide-md hide-sm hide-xs ng-if="startCtrl.hasNavigateUp()" ng-click="startCtrl.navigateUp()"
+                   class="md-icon-button navigate-up"
+                   aria-label="Back">
+          <md-icon class="toolbar-icons">arrow_back</md-icon>
+        </md-button>
         <h2>
           <span>{{startCtrl.currentTitle}}</span>
         </h2>
