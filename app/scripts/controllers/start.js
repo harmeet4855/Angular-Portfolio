@@ -9,7 +9,7 @@
    * Controller of the portfolioApp
    */
   angular.module('portfolioApp')
-    .controller('StartController', function ($rootScope, $mdSidenav, $log, $state) {
+    .controller('StartController', function ($rootScope, $mdSidenav, $mdMedia, $log, $state) {
       var vm = this;
       $log.debug($state.current);
 
@@ -24,6 +24,7 @@
       vm.home = home;
       vm.resume = resume;
       vm.toolbarTitle = toolbarTitle;
+      vm.checkSidenavCloseScreen = checkSidenavCloseScreen;
 
       $rootScope.$on('$stateChangeSuccess', toolbarTitle);
       toolbarTitle();
@@ -63,6 +64,12 @@
 
       function toolbarTitle(event, toState, toParams, fromState, fromParams){
         vm.currentTitle = $state.current.titlename;
+      }
+
+      function checkSidenavCloseScreen(){
+        if($mdMedia('xs')){
+          vm.close();
+        }
       }
     });
 })();

@@ -1,5 +1,11 @@
+@import url(icon.css);
+
 md-sidenav{
   position: fixed !important;
+}
+
+.responsive{
+  max-width: 100%;
 }
 
 .clickable{
@@ -16,8 +22,28 @@ md-sidenav{
 }
 
 md-toolbar {
-  background-color: rgba(255, 255, 255, 0.87) !important;
+  background-color: rgba(255, 255, 255, 0.90) !important;
   color: rgb(117, 117, 117) !important;
+}
+
+.main-toolbar{
+  position: fixed;
+}
+
+md-tabs-wrapper {
+  background-color: rgba(255, 255, 255, 0.90) !important;
+  z-index: 1;
+  position: fixed;
+  top: 64px;
+  width: 100%;
+}
+
+md-ink-bar{
+  height: 3px;
+}
+
+md-tabs-content-wrapper {
+  margin-top: 113px;
 }
 
 .toolbar-icons {
@@ -73,6 +99,7 @@ md-grid-list{
 }
 
 md-grid-tile{
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -86,7 +113,24 @@ md-grid-tile{
   padding-right: 15px;
 }
 
+.summary-header{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 /*media quries*/
+@media screen and (min-width: 925px) and (max-width: 960px) {
+  md-tabs-wrapper{
+    top: 48px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  md-tabs-wrapper{
+    top: 56px;
+  }
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1620px) {
   .content-container{
     margin-left: 20%;
