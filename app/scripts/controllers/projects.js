@@ -17,7 +17,7 @@
       vm.projects = [
         {
           name: 'Sigcloud',
-          thumb: 'images/sigcloud.png',
+          thumb: 'images/sig-cloud.png',
           state: 'start.sigcloud'
         },
         {
