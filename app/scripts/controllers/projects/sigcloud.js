@@ -89,7 +89,7 @@
           desc: 'Font, Color and Icons',
           thumb: 'images/sigcloud/sigcloud-08.jpg',
           size: '50'
-        },
+        }
       ]
 
       vm.deliverables = [

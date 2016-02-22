@@ -3,13 +3,13 @@
 
   /**
    * @ngdoc function
-   * @name portfolioApp.controller:FlexflightsController
+   * @name portfolioApp.controller:WaterloggingController
    * @description
-   * # FlexflightsController
+   * # WaterloggingController
    * Controller of the portfolioApp
    */
   angular.module('portfolioApp')
-    .controller('FlexflightsController', function ($log, $state) {
+    .controller('WaterloggingController', function ($log, $state) {
       var vm = this;
       $log.debug($state.current);
 

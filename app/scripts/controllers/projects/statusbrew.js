@@ -3,13 +3,13 @@
 
   /**
    * @ngdoc function
-   * @name portfolioApp.controller:FlexflightsController
+   * @name portfolioApp.controller:StatusbrewController
    * @description
-   * # FlexflightsController
+   * # StatusbrewController
    * Controller of the portfolioApp
    */
   angular.module('portfolioApp')
-    .controller('FlexflightsController', function ($log, $state) {
+    .controller('StatusbrewController', function ($log, $state) {
       var vm = this;
       $log.debug($state.current);
 

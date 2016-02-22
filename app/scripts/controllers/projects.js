@@ -16,34 +16,29 @@
       //Declare properties here
       vm.projects = [
         {
+          name: 'Saathi',
+          thumb: 'images/covers/saathi.jpg',
+          state: 'start.saathi'
+        },
+        {
           name: 'Sigcloud',
-          thumb: 'images/sig-cloud.png',
+          thumb: 'images/covers/sigcloud.jpg',
           state: 'start.sigcloud'
         },
         {
           name: 'Sociotags',
-          thumb: 'images/socioTags.png',
+          thumb: 'images/covers/sociotags.jpg',
           state: 'start.sociotags'
+        },        
+        {
+          name: 'Alz-Mob',
+          thumb: 'images/covers/mobcustom.jpg',
+          state: 'start.mobcustom'
         },
         {
-          name: 'Chat.io',
-          thumb: 'images/chat.io.png',
-          state: 'start.chatIo'
-        },
-        {
-          name: 'Flexflights',
-          thumb: 'images/flexFlights.png',
-          state: 'start.flexflights'
-        },
-        {
-          name: 'Salsa',
-          thumb: 'images/foodPrinting.png',
-          state: 'start.salsa'
-        },
-        {
-          name: 'Techniche Website',
-          thumb: 'images/technicheWeb.png',
-          state: 'start.techwebsite'
+          name: 'Statusbrew',
+          thumb: 'images/covers/statusbrew.jpg',
+          state: 'start.statusbrew'
         }
       ];
 
@@ -55,3 +50,37 @@
       }
     });
 })();
+
+
+      // vm.projects = [
+      //   {
+      //     name: 'Sigcloud',
+      //     thumb: 'images/sig-cloud.png',
+      //     state: 'start.sigcloud'
+      //   },
+      //   {
+      //     name: 'Sociotags',
+      //     thumb: 'images/socioTags.png',
+      //     state: 'start.sociotags'
+      //   },
+      //   {
+      //     name: 'Chat.io',
+      //     thumb: 'images/chat.io.png',
+      //     state: 'start.chatIo'
+      //   },
+      //   {
+      //     name: 'Flexflights',
+      //     thumb: 'images/flexFlights.png',
+      //     state: 'start.flexflights'
+      //   },
+      //   {
+      //     name: 'Salsa',
+      //     thumb: 'images/foodPrinting.png',
+      //     state: 'start.salsa'
+      //   },
+      //   {
+      //     name: 'Techniche Website',
+      //     thumb: 'images/technicheWeb.png',
+      //     state: 'start.techwebsite'
+      //   }
+      // ];

@@ -15,6 +15,7 @@
 
       //Declare properties here
       vm.currentTitle = 'Highlights';
+      vm.isLoading = true;
 
       //Declare methods here
       vm.hasNavigateUp = hasNavigateUp;
@@ -25,9 +26,22 @@
       vm.resume = resume;
       vm.toolbarTitle = toolbarTitle;
       vm.checkSidenavCloseScreen = checkSidenavCloseScreen;
+      vm.goToProjects = goToProjects;
 
       $rootScope.$on('$stateChangeSuccess', toolbarTitle);
       toolbarTitle();
+
+      // document.addEventListener("load", function(event) {
+      //   vm.isLoading = false;
+      // });  
+
+      // $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+      //   vm.isLoading = true;
+      // });
+
+      // $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+      //   vm.isLoading = false;
+      // });
 
       function hasNavigateUp() {
         return angular.isDefined($state.current.navigateUp);
@@ -52,7 +66,7 @@
       }
 
       function home(){
-        $state.go($state.current.navigateUp);
+        $state.go('start.home');
       }
 
       function resume(){
@@ -70,6 +84,10 @@
         if($mdMedia('xs')){
           vm.close();
         }
+      }
+
+      function goToProjects(){
+        $state.go('start.projects');
       }
     });
 })();

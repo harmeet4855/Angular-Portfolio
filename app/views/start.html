@@ -1,3 +1,4 @@
+<!-- <md-progress-linear md-mode="indeterminate" ng-show="startCtrl.isLoading"></md-progress-linear> -->
 <section layout="row" flex>
   <md-sidenav class="md-sidenav-left md-whiteframe-z1" flex-lg="20" md-component-id="left"
               md-is-locked-open="$mdMedia('gt-md')">
@@ -16,7 +17,7 @@
       <md-list-item ng-click="startCtrl.home();startCtrl.checkSidenavCloseScreen()" class="profile" >
         <div layout="column">
           <div layout="row">
-            <img ng-src="images/dp1.jpg" class="md-avatar" alt="{{}}"/>
+            <img ng-src="images/avatar.png" class="md-avatar" alt="{{}}"/>
             <div layout="column">
               <span class="profile-name">Harmeet Singh</span>
             </div>
@@ -68,6 +69,12 @@
       </div>
     </md-toolbar>
     <div ui-view=""></div>
+    <md-button ng-click="startCtrl.goToProjects()" class="md-fab md-accent" aria-label="Projects">
+        <md-tooltip md-direction="top">
+          Projects
+        </md-tooltip>
+        <md-icon>view_list</md-icon>
+    </md-button>
   </div>
 </section>
 

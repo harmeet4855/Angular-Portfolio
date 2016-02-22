@@ -3,13 +3,13 @@
 
   /**
    * @ngdoc function
-   * @name portfolioApp.controller:FlexflightsController
+   * @name portfolioApp.controller:SaathiController
    * @description
-   * # FlexflightsController
+   * # SaathiController
    * Controller of the portfolioApp
    */
   angular.module('portfolioApp')
-    .controller('FlexflightsController', function ($log, $state) {
+    .controller('SaathiController', function ($log, $state) {
       var vm = this;
       $log.debug($state.current);
 
@@ -18,20 +18,32 @@
         {
           name: 'Step 1',
           desc: 'Defining Method Line',
-          thumb: 'images/sociotags/sociotags-04.jpg',
-          size: '100'
+          thumb: 'images/saathi/method2.jpg',
+          size: '50'
         },
         {
           name: 'Step 2',
           desc: 'Defining Problem Statement',
-          thumb: 'images/sociotags/sociotags-02.jpg',
+          thumb: 'images/saathi/method3.jpg',
           size: '50'
         },
         {
           name: 'Focus Groups',
           desc: 'Competitor Analysis',
-          thumb: 'images/sociotags/sociotags-03.jpg',
+          thumb: 'images/saathi/method4.jpg',
           size: '50'
+        },
+        {
+          name: 'Focus Groups',
+          desc: 'Competitor Analysis',
+          thumb: 'images/saathi/method5.jpg',
+          size: '50'
+        },
+        {
+          name: 'Focus Groups',
+          desc: 'Competitor Analysis',
+          thumb: 'images/saathi/method6.jpg',
+          size: '100'
         }
       ]
 
