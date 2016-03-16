@@ -1,8 +1,12 @@
 @import url(icon.css);
 body {
+  font-family: "Montserrat";
+}
+/*
+body {
   font-family: "Open Sans";
 }
-
+*/
 input,
 button,
 select,
@@ -12,12 +16,39 @@ textarea {
   line-height: inherit;
 }
 
+/*video {
+    height:100% !important;
+    width: 100% !important;
+}*/
+
+iframe, object, embed {
+        max-width: 100%;
+        height: 855px;
+}
+
 md-sidenav {
     position: fixed !important;
 }
 
 .general-content{
     margin-top: 65px;
+}
+
+.md-display-1 {
+    font-size: 24px;
+}
+
+.md-subhead {
+    font-size: 15px;
+}
+
+.md-headline {
+    font-size: 20px;
+}
+
+md-card-actions>.md-button{
+    text-transform: capitalize !important;
+    color: #E7145B !important;
 }
 
 .md-display-1,
@@ -34,7 +65,16 @@ md-sidenav {
 .md-card-image {
     overflow-y: auto;
 }
+/*
+md-content{
+    background-image: url("../images/saathi/bg.jpg");
+}*/
 
+/*.md-card-video {
+    overflow-y: auto;
+    width: 100%;
+}
+*/
 .clickable {
     cursor: pointer !important;
 }
@@ -74,6 +114,9 @@ md-tabs-wrapper {
     width: 100%;
 }
 
+/*#E7145B*/
+/*#00984C*/
+
 md-ink-bar {
   background: #E7145B !important;
     height: 3px;
@@ -102,9 +145,11 @@ md-list {
 }
 
 .profile > button > div {
-    font-size: 30px;
-    color: #7AD3BE;
-    font-weight: 300;
+    font-size: 28px;
+/*    color: #7AD3BE;
+*/ 
+    color: #757575;
+   font-weight: 300;
 }
 
 .md-avatar {
@@ -149,6 +194,14 @@ md-grid-tile {
   bottom: 2%;
 }
 
+.use-case{
+    padding-top: 20px;
+}
+
+.md-3-line{
+    min-height: 0px !important;
+}
+
 /*.projects-type{*/
 
 
@@ -167,6 +220,7 @@ md-grid-tile {
 
 .summary-header {
     margin: 0px !important;
+    margin-bottom: 20px !important;
     padding: 0px !important;
 }
 
@@ -174,12 +228,19 @@ md-tab-item>span {
     color: rgba(0, 0, 0, 0.54);
 }
 
+#hidden-menu{
+    display:none;
+}
 
 /*media quries*/
 
 @media screen and (min-width: 640px) and (max-width: 960px) {
     md-tabs-wrapper {
         top: 48px;
+    }
+
+    iframe, object, embed {
+        height: 400px;
     }
 }
 
@@ -197,15 +258,35 @@ md-tab-item>span {
 }
 */
 
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    iframe, object, embed {
+        height: 550px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     md-tabs-wrapper {
         top: 56px;
+    }
+
+    iframe, object, embed {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    iframe, object, embed {
+        height: 150px;
     }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1620px) {
     .content-container {
         margin-left: 20%;
+    }
+
+    iframe, object, embed {
+        height: 650px;
     }
 }
 

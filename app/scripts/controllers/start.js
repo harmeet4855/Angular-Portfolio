@@ -16,6 +16,7 @@
       //Declare properties here
       vm.currentTitle = 'Highlights';
       vm.isLoading = true;
+      vm.hasMenu = true;
 
       //Declare methods here
       vm.hasNavigateUp = hasNavigateUp;
@@ -27,6 +28,7 @@
       vm.toolbarTitle = toolbarTitle;
       vm.checkSidenavCloseScreen = checkSidenavCloseScreen;
       vm.goToProjects = goToProjects;
+      // vm.hasMenu = hasMenu;
 
       $rootScope.$on('$stateChangeSuccess', toolbarTitle);
       toolbarTitle();
@@ -81,7 +83,7 @@
       }
 
       function checkSidenavCloseScreen(){
-        if($mdMedia('xs')){
+        if($mdMedia('xs') || $mdMedia('sm') || $mdMedia('md')){
           vm.close();
         }
       }
@@ -89,5 +91,13 @@
       function goToProjects(){
         $state.go('start.projects');
       }
+
+      // function hasMenu(){
+
+      // }
+
+      // function hideMenu(){
+        
+      // }
     });
 })();

@@ -1,70 +1,70 @@
 <md-tabs md-dynamic-height md-border-bottom>
-  <md-tab label="Abstract">
+  <md-tab label="Brief">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">Abstract</h1>
+        <h1 class="projects-type md-display-1">Brief</h1>
         <div layout="row" flex layout-wrap>
           <md-list-item flex-gt-md="50" flex="100" class="summary-header md-3-line md-long-text">
-          <div class="md-list-item-text">
-            <div>
-                <p>
-                    <span>
-                        <strong>
-                            <span>Project Description</span>:
-                        </strong> 
-                        Intern based work done on a use-case SigCloud, which caters to providing packages of big data services on cluster of nodes/machines/instances launched by a company on cloud network.
-                    </span>
-                    <br>
-                    <span>
-                        <strong>
-                            <span>Project Status</span>:
-                        </strong> 
-                        Front-End Development Complete
-                    </span>
-                    <br>
-                    <span>
-                        <strong>
-                            <span>Client</span>:
-                        </strong>
-                        Sigmoid, Bengaluru
-                    </span>
-                    <br>
-                    <span>
-                        <strong>
-                            <span>Guide</span>:
-                        </strong> 
-                        Asit Parija
-                    </span>
-                    <br>
-                    <span>
-                        <strong>
-                            <span>Project Duration</span>:
-                        </strong>
-                        May - Jun'15
-                    </span>
-                    <br>
-                    <span>
-                        <strong>
-                            <span>Design Responsibilities</span>:
-                        </strong>
-                        Understanding users and their goals, competitive analysis, information architecture, wireframes, icons.
-                    </span>
-                    <br>
-                    <span>
-                        <strong>
-                            <span>Technical Responsibilities</span>:
-                        </strong>
-                        Basic structure/layout &amp; functionalityof the pages achieved using HTML5, CSS3, Bootstrap, Jquery etc. Advanced usage of Angular.js framework for creating repetitve structures and hierarchy at many places. Use of Angular-$http,$timeout services for continous polling of data from Node.js server.
-                    </span>
-                </p>
+            <div class="md-list-item-text">
+              <div>
+                  <p>
+                      <span>
+                          <strong>
+                              <span>Project Description</span>:
+                          </strong> 
+                          Based on OZCHI'15 Student Design Challenge to come up with a design solution to cater the problem of social isolation in a scenario of choice. Sociotags, which are color coded smart tags, brought in place of Airport handbag tags, are proposed as solution, which try to depict the similarity of interests in people travelling and motivate them to interact with eachother.
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Project Status</span>:
+                          </strong> 
+                          Selected in top 6 teams in the Student Design Challenge held internationally. Also Research paper accepted to be presented in the USB Proceedings of OZCHI’15 Conference to be held in Melbourne, Australia. 
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Client</span>:
+                          </strong>
+                          OZCHI'15 Student Design Challenge
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Project Duration(For Submission after Reviews and Selection)</span>:
+                          </strong>
+                          Aug'15
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Design Responsibilities</span>:
+                          </strong>
+                          Work involved literature review, searching scenarios, filtering them, picking a scenario and
+                          brainstorming over possible solutions, making personas, coming up with mental models and final prototypes.
+                      </span>
+                      <br>
+                  </p>
+              </div>
             </div>
+          </md-list-item>
+          <div class="use-case" flex-gt-md="80" flex="100">
+            <md-card>
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">Summary</span>
+                  <span class="md-subhead">Infographic</span>
+                </md-card-header-text>
+              </md-card-header>
+              <md-divider></md-divider>
+              <img src="images/sociotags/use-case.jpg" class="md-card-image">
+            </md-card>
           </div>
-        </md-list-item>
         </div>
       </div>
     </md-content>
   </md-tab>
-  <md-tab label="Use Case">
+  <!-- <md-tab label="Use Case">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Use Case</h1>
@@ -94,13 +94,13 @@
           </div>
       </div>
     </md-content>
-  </md-tab>
+  </md-tab> -->
   <md-tab label="Methodology">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Methodology</h1>
         <div layout="row" flex layout-wrap>
-            <md-list-item  flex="100" class="summary-header md-3-line md-long-text">
+<!--             <md-list-item  flex="100" class="summary-header md-3-line md-long-text">
               <div class="md-list-item-text">
                 <p>
                   Web development is a broad term for the work involved in developing a web site for the Internet
@@ -109,7 +109,7 @@
                   social network services.
                 </p>
               </div>
-            </md-list-item>
+            </md-list-item> -->
             <div flex-gt-sm="{{method.size}}" flex="100" ng-repeat="method in sociotagsCtrl.methods">
              <md-card>
                 <md-card-header>
@@ -131,17 +131,21 @@
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Deliverables</h1>
         <div layout="row" flex layout-wrap>
-            <md-list-item  flex="100" class="summary-header md-3-line md-long-text">
-              <div class="md-list-item-text">
-                <p>
-                  Web development is a broad term for the work involved in developing a web site for the Internet
-                  (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest
-                  static single page of plain text to the most complex web-based internet applications, electronic businesses, and
-                  social network services.
-                </p>
-              </div>
-            </md-list-item>
-            <div flex-gt-md="30" flex="100" ng-repeat="deliverable in sociotagsCtrl.deliverables">
+            <div flex="100">
+              <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">Video Submission</span>
+                    <span class="md-subhead">Conceptualisation and Product Video</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <iframe src="https://www.youtube.com/embed/LyK6q5aklUQ" 
+                frameborder="0" allowfullscreen>
+                </iframe>       
+              </md-card>
+            </div>
+            <div flex="100" ng-repeat="deliverable in sociotagsCtrl.deliverables">
               <md-card>
                 <md-card-header>
                   <md-card-header-text>

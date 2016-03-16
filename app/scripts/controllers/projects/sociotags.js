@@ -17,39 +17,39 @@
       vm.methods = [
         {
           name: 'Step 1',
-          desc: 'Defining Method Line',
+          desc: 'Defining Problem Statement',
           thumb: 'images/sociotags/sociotags-01.jpg',
           size: '100'
         },
         {
           name: 'Step 2',
-          desc: 'Defining Problem Statement',
+          desc: 'Choosing a Focus Group',
           thumb: 'images/sociotags/sociotags-02.jpg',
           size: '50'
         },
         {
-          name: 'Focus Groups',
-          desc: 'Competitor Analysis',
+          name: 'Step 3',
+          desc: 'Passenger Journey Map',
           thumb: 'images/sociotags/sociotags-03.jpg',
           size: '50'
         },
         {
-          name: 'Focus Groups',
-          desc: 'Competitor Analysis',
+          name: 'Step 4',
+          desc: 'User Research',
           thumb: 'images/sociotags/sociotags-04.jpg',
           size: '100'
         },
         {
-          name: 'Focus Groups',
-          desc: 'Competitor Analysis',
+          name: 'Step 5',
+          desc: 'Creating a System Model',
           thumb: 'images/sociotags/sociotags-05.jpg',
           size: '100'
         },
         {
-          name: 'Focus Groups',
-          desc: 'Competitor Analysis',
+          name: 'Step 6',
+          desc: 'Attributes of Solution',
           thumb: 'images/sociotags/sociotags-06.jpg',
-          size: '100'
+          size: '50'
         }
       ]
 

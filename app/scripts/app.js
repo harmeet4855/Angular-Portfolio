@@ -21,19 +21,19 @@ angular.module('portfolioApp', [
         controller: 'StartController',
         controllerAs: 'startCtrl'
       })
-      .state('start.home', {
-        url: '',
-        templateUrl: 'views/home.html',
-        controller: 'HomeController',
-        controllerAs: 'homeCtrl',
-        titlename: 'Highlights'
-      })
+      // .state('start.home', {
+      //   url: '',
+      //   templateUrl: 'views/home.html',
+      //   controller: 'HomeController',
+      //   controllerAs: 'homeCtrl',
+      //   titlename: 'Highlights'
+      // })
       .state('start.projects', {
-        url: 'projects',
+        url: '',
         templateUrl: 'views/projects.html',
         controller: 'ProjectsController',
         controllerAs: 'projectsCtrl',
-        navigateUp: 'start.home',
+        // navigateUp: 'start.home',
         titlename: 'Projects'
       })
       //INDIVIDUAL PROJECTS ---- start
@@ -69,13 +69,13 @@ angular.module('portfolioApp', [
           navigateUp: 'start.projects',
           titlename: 'Statusbrew'
         })
-        .state('start.mobcustom', {
-          url: 'mobcustom',
-          templateUrl: 'views/projects/mobcustom.html',
-          controller: 'MobcustomController',
-          controllerAs: 'mobcustomCtrl',
+        .state('start.alzmob', {
+          url: 'alz-mob',
+          templateUrl: 'views/projects/alzmob.html',
+          controller: 'AlzmobController',
+          controllerAs: 'alzmobCtrl',
           navigateUp: 'start.projects',
-          titlename: 'Mobile Phone Customization'
+          titlename: 'Alz-Mob'
         })
         .state('start.waterlogging', {
           url: 'waterlogging',
@@ -122,16 +122,16 @@ angular.module('portfolioApp', [
         url: 'experience',
         templateUrl: 'views/experience.html',
         controller: 'ExperienceController',
-        controllerAs: 'experienceCrl',
-        navigateUp: 'start.home',
+        controllerAs: 'experienceCtrl',
+        navigateUp: 'start.projects',
         titlename: 'Experience'
       })
       .state('start.contact', {
         url: 'contact',
         templateUrl: 'views/contact.html',
         controller: 'ContactController',
-        controllerAs: 'contactCrl',
-        navigateUp: 'start.home',
+        controllerAs: 'contactCtrl',
+        navigateUp: 'start.projects',
         titlename: 'Contact Me'
       });
 
