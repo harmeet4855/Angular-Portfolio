@@ -16,6 +16,8 @@
       //Declare properties here
       vm.projects = [
         {
+          ux: 1,
+          web: 0,
           name: 'Saathi',
           thumb: 'images/covers/saathi.jpg',
           state: 'start.saathi',
@@ -23,6 +25,8 @@
           desc: 'Saathi is a smart watch which taps the problem of lack of time perception amongst children with learning disabilities, by displaying time in the form of visuals, audio feedback and images from the daily life...'
         },
         {
+          ux: 1,
+          web: 1,
           name: 'Sigcloud',
           thumb: 'images/covers/sigcloud.jpg',
           state: 'start.sigcloud',
@@ -30,18 +34,31 @@
           desc: 'SigCloud caters to easy deployment of packages of big data services on cloud based infrastructure, along with the provision of monitoring & management capabilities for the infrastructure deployed on cloud...'
         },
         {
-          name: 'Sociotags',
-          thumb: 'images/covers/sociotags.jpg',
-          state: 'start.sociotags',
-          keywords: 'Social Interaction | Airports',
-          desc: 'Sociotags are color coded smart tags, brought in place of Airport handbag tags, which tries to cater the problem of social isolation by depicting similar interests in people travelling and motivating them to interact...'
-        },        
+          ux: 1,
+          web: 0,
+          name: 'MedTour',
+          thumb: 'images/covers/medtour.jpg',
+          state: 'start.medtour',
+          keywords: 'Medical Tourism | Wearables',
+          desc: 'MedTour is a wearable which helps in easing the journey of a Medical Tourist by providing contextual information from environment around and helping the person to be prepared beforehand for the next step... '
+        },
         {
+          ux: 1,
+          web: 0,
           name: 'Alz-Mob',
           thumb: 'images/covers/mobcustom.jpg',
           state: 'start.alzmob',
           keywords: 'Alzheimer | Mobile Phone',
           desc: 'Alz-Mob is a customized mobile phone for Alzheimer patients. It builds upon assumptions based on movable buttons in 3D space matrix, and contextually adjusts gutter space and evident buttons on panel...'
+        },
+        {
+          ux: 1,
+          web: 0,
+          name: 'Sociotags',
+          thumb: 'images/covers/sociotags.jpg',
+          state: 'start.sociotags',
+          keywords: 'Social Interaction | Airports',
+          desc: 'Sociotags are color coded smart tags, brought in place of Airport handbag tags, which tries to cater the problem of social isolation by depicting similar interests in people travelling and motivating them to interact...'
         }
         // ,
         // {
@@ -57,7 +74,15 @@
       vm.goToProject = goToProject;
 
       function goToProject(state){
-        $state.go(state);
+        if(state === 'start.medtour'){
+          window.open(
+            'https://instructionaldesignisfun.wordpress.com/2016/04/07/taking-out-the-load-from-a-medical-tourists-journey/',
+            '_blank' // <- This is what makes it open in a new window.
+          );
+        }
+        else{
+          $state.go(state);
+        }        
       }
     });
 })();

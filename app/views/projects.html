@@ -2,15 +2,15 @@
   <md-tab label="User Experience">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">User Experience</h1>
-        <span class="md-subhead">
+        <h1 class="projects-type md-display-1">User Experience based projects</h1>
+<!--         <span class="md-subhead">
           User experience (abbreviated as UX) is how a person feels when interfacing
           with a system. The system could be a website, a web application or desktop software and, in modern
           contexts, is generally denoted by some form of human-computer interaction (HCI).
-        </span>
+        </span> -->
       </div>
       <div layout="row" layout-wrap>
-        <div class="clickable" ng-click="projectsCtrl.goToProject(project.state)" flex="25" flex-sm="50"
+        <div class="clickable" ng-if="project.ux" ng-click="projectsCtrl.goToProject(project.state)" flex="25" flex-sm="50"
              flex-md="25" flex-xs="100" ng-repeat="project in projectsCtrl.projects" layout="column">
           <md-card class="click-cards">
             <img ng-src="{{project.thumb}}" class="md-card-image" alt="{{project.name}}">
@@ -36,17 +36,40 @@
   <md-tab label="Web Development">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">Web Development</h1>
-        <span class="md-subhead">
+        <h1 class="projects-type md-display-1">Web Development based projects</h1>
+       <!--  <span class="md-subhead">
           Web development is a broad term for the work involved in developing a web site for the Internet
           (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest
           static single page of plain text to the most complex web-based internet applications, electronic businesses, and
           social network services. A more comprehensive list of tasks to which web development commonly refers, may include
           web design, web content development, client liaison, client-side/server-side scripting, web server and network
           security configuration, and e-commerce development.
-        </span>
-      </div>      
-      <!-- <md-fab-speed-dial ng-hide="projectsCtrl.hidden" md-direction="up" md-open="projectsCtrl.isOpen"
+        </span> -->
+      </div>
+      <div layout="row" layout-wrap>
+        <div class="clickable" ng-if="project.web" ng-click="projectsCtrl.goToProject(project.state)" flex="25" flex-sm="50"
+             flex-md="25" flex-xs="100" ng-repeat="project in projectsCtrl.projects" layout="column">
+          <md-card class="click-cards">
+            <img ng-src="{{project.thumb}}" class="md-card-image" alt="{{project.name}}">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">{{project.name}}</span>
+                <span class="md-subhead"><b>{{project.keywords}}</b></span>
+              </md-card-title-text>
+            </md-card-title>            
+            <md-card-content>
+              <p class="md-body-1">
+                {{project.desc}}
+              </p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+              <md-button class="md-accent" ng-click="projectsCtrl.goToProject(project.state)">Read more</md-button>
+            </md-card-actions>
+          </md-card>
+        </div>
+      </div>
+<!--       <h3 class="clickable" ng-click="projectsCtrl.medTour()">MedTour</h3>      
+ -->      <!-- <md-fab-speed-dial ng-hide="projectsCtrl.hidden" md-direction="up" md-open="projectsCtrl.isOpen"
                          class="md-scale md-fab-top-right" ng-class="{ 'md-hover-full': projectsCtrl.hover }"
                          ng-mouseenter="projectsCtrl.isOpen=true" ng-mouseleave="projectsCtrl.isOpen=false">
         <md-fab-trigger>

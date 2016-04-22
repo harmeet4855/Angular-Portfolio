@@ -61,6 +61,14 @@ angular.module('portfolioApp', [
           navigateUp: 'start.projects',
           titlename: 'Saathi'
         })
+        .state('start.medtour', {
+          url: 'medtour',
+          templateUrl: 'views/projects/medtour.html',
+          controller: 'MedtourController',
+          controllerAs: 'medtourCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'MedTour'
+        })
         .state('start.statusbrew', {
           url: 'statusbrew',
           templateUrl: 'views/projects/statusbrew.html',

@@ -3,13 +3,13 @@
 
   /**
    * @ngdoc function
-   * @name portfolioApp.controller:SaathiController
+   * @name portfolioApp.controller:MedtourController
    * @description
-   * # SaathiController
+   * # MedtourController
    * Controller of the portfolioApp
    */
   angular.module('portfolioApp')
-    .controller('SaathiController', function ($log, $state) {
+    .controller('MedtourController', function ($log, $state) {
       var vm = this;
       $log.debug($state.current);
 

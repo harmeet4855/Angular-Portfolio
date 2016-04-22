@@ -1,4 +1,12 @@
 @import url(icon.css);
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-style: normal;
+  src: url('fonts/montserrat/Montserrat-Light.otf');
+}
+
+
 body {
   font-family: "Montserrat";
 }
@@ -11,7 +19,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Montserrat-Light' !important;
   font-size: inherit;
   line-height: inherit;
 }
@@ -23,7 +31,7 @@ textarea {
 
 iframe, object, embed {
         max-width: 100%;
-        height: 855px;
+        height: 600px;
 }
 
 md-sidenav {
@@ -34,7 +42,7 @@ md-sidenav {
     margin-top: 65px;
 }
 
-.md-display-1 {
+/*.md-display-1 {
     font-size: 24px;
 }
 
@@ -44,7 +52,7 @@ md-sidenav {
 
 .md-headline {
     font-size: 20px;
-}
+}*/
 
 md-card-actions>.md-button{
     text-transform: capitalize !important;
@@ -55,6 +63,7 @@ md-card-actions>.md-button{
 .md-display-2,
 .md-display-3,
 .md-headline {
+    font-family: 'Montserrat-Light';
     color: #757575;
 }
 
