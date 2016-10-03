@@ -18,26 +18,55 @@
         {
           ux: 1,
           web: 0,
+          name: 'Adobe-Anigo',
+          designation: 'UX Design Intern',
+          logo: 'images/experience/adobe/logo.png',
+          thumb: 'images/covers/covers-08.jpg',
+          state: 'start.anigo',
+          keywords: 'Video-Creation | Youtubers',
+          desc: ' Adobe Internship Project, Anigo involved creating an end-to-end solution for Youtubers, Social Media Managers, Video Instructors etc. to help them create high quality video and animation content for Social Media...'
+        },
+        {
+          ux: 1,
+          web: 0,
           name: 'Saathi',
-          thumb: 'images/covers/saathi.jpg',
+          thumb: 'images/covers/covers-02.jpg',
           state: 'start.saathi',
           keywords: 'Assistive Technologies | Time Perception',
           desc: 'Saathi is a smart watch which taps the problem of lack of time perception amongst children with learning disabilities, by displaying time in the form of visuals, audio feedback and images from the daily life...'
         },
         {
           ux: 1,
-          web: 1,
-          name: 'Sigcloud',
-          thumb: 'images/covers/sigcloud.jpg',
-          state: 'start.sigcloud',
-          keywords: 'Big Data | Cloud Comp',
-          desc: 'SigCloud caters to easy deployment of packages of big data services on cloud based infrastructure, along with the provision of monitoring & management capabilities for the infrastructure deployed on cloud...'
+          web: 0,
+          name: 'Ignition',
+          thumb: 'images/covers/covers-07.jpg',
+          state: 'start.ignition',
+          keywords: 'Startups | Systems Approach',
+          desc: 'Analyzing journey of various Service-based Startups & developing an end-to-end solution for increasing their chances of success by closely linking Startups, Investors and Freelancers and making them more aware...'
         },
         {
           ux: 1,
           web: 0,
+          name: 'Sociotags',
+          thumb: 'images/covers/covers-05.jpg',
+          state: 'start.sociotags',
+          keywords: 'Social Interaction | Airports',
+          desc: 'Sociotags are color coded smart tags, brought in place of Airport handbag tags, which tries to cater the problem of social isolation by depicting similar interests in people travelling and motivating them to interact...'
+        },
+        {
+          ux: 1,
+          web: 1,
+          name: 'Sigcloud',
+          thumb: 'images/covers/covers-03.jpg',
+          state: 'start.sigcloud',
+          keywords: 'Big Data | Cloud Comp',
+          desc: 'SigCloud caters to easy deployment of packages of big data services on cloud based infrastructure, along with the provision of monitoring & management capabilities for the infrastructure deployed on cloud...'
+        },        
+        {
+          ux: 1,
+          web: 0,
           name: 'MedTour',
-          thumb: 'images/covers/medtour.jpg',
+          thumb: 'images/covers/covers-04.jpg',
           state: 'start.medtour',
           keywords: 'Medical Tourism | Wearables',
           desc: 'MedTour is a wearable which helps in easing the journey of a Medical Tourist by providing contextual information from environment around and helping the person to be prepared beforehand for the next step... '
@@ -46,19 +75,10 @@
           ux: 1,
           web: 0,
           name: 'Alz-Mob',
-          thumb: 'images/covers/mobcustom.jpg',
+          thumb: 'images/covers/covers-06.jpg',
           state: 'start.alzmob',
           keywords: 'Alzheimer | Mobile Phone',
           desc: 'Alz-Mob is a customized mobile phone for Alzheimer patients. It builds upon assumptions based on movable buttons in 3D space matrix, and contextually adjusts gutter space and evident buttons on panel...'
-        },
-        {
-          ux: 1,
-          web: 0,
-          name: 'Sociotags',
-          thumb: 'images/covers/sociotags.jpg',
-          state: 'start.sociotags',
-          keywords: 'Social Interaction | Airports',
-          desc: 'Sociotags are color coded smart tags, brought in place of Airport handbag tags, which tries to cater the problem of social isolation by depicting similar interests in people travelling and motivating them to interact...'
         }
         // ,
         // {

@@ -28,15 +28,31 @@ angular.module('portfolioApp', [
       //   controllerAs: 'homeCtrl',
       //   titlename: 'Highlights'
       // })
+      // .state('start.experience', {
+      //   url: '',
+      //   templateUrl: 'views/experience.html',
+      //   controller: 'ExperienceController',
+      //   controllerAs: 'experienceCtrl',
+      //   // navigateUp: 'start.experience',
+      //   titlename: 'Experience'
+      // })
       .state('start.projects', {
         url: '',
         templateUrl: 'views/projects.html',
         controller: 'ProjectsController',
         controllerAs: 'projectsCtrl',
-        // navigateUp: 'start.home',
+        // navigateUp: 'start.experience',
         titlename: 'Projects'
       })
       //INDIVIDUAL PROJECTS ---- start
+        .state('start.anigo', {
+          url: 'anigo',
+          templateUrl: 'views/projects/anigo.html',
+          controller: 'AnigoController',
+          controllerAs: 'anigoCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Adobe-Anigo'
+        })
         .state('start.sigcloud', {
           url: 'sigcloud',
           templateUrl: 'views/projects/sigcloud.html',
@@ -60,6 +76,14 @@ angular.module('portfolioApp', [
           controllerAs: 'saathiCtrl',
           navigateUp: 'start.projects',
           titlename: 'Saathi'
+        })
+        .state('start.ignition', {
+          url: 'ignition',
+          templateUrl: 'views/projects/ignition.html',
+          controller: 'IgnitionController',
+          controllerAs: 'ignitionCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Ignition'
         })
         .state('start.medtour', {
           url: 'medtour',
@@ -126,13 +150,11 @@ angular.module('portfolioApp', [
           titlename: 'Techniche Website'
         })
       //INDIVIDUAL PROJECTS ---- end
-      .state('start.experience', {
-        url: 'experience',
-        templateUrl: 'views/experience.html',
-        controller: 'ExperienceController',
-        controllerAs: 'experienceCtrl',
+      .state('start.resume', {
+        url: 'resume',
+        templateUrl: 'views/resume.html',
         navigateUp: 'start.projects',
-        titlename: 'Experience'
+        titlename: 'Resume'
       })
       .state('start.contact', {
         url: 'contact',

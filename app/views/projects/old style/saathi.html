@@ -1,5 +1,5 @@
 <md-tabs md-dynamic-height md-border-bottom>
-  <md-tab label="Project-Detailed">
+  <md-tab label="Brief">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Brief</h1>
@@ -55,11 +55,39 @@
           </md-list-item>
           <div class="use-case" flex-gt-md="80" flex="100">
              <md-card>
-                <img ng-repeat="image in saathiCtrl.images" ng-src="{{image}}" class="md-card-image">
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">Use Case</span>
+                    <span class="md-subhead">Infographic</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img src="images/saathi/prod-summary.jpg" class="md-card-image">
               </md-card>
             </div>
           </div>
         </div>
+      </div>
+    </md-content>
+  </md-tab>
+  <md-tab label="Methodology">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Methodology</h1>
+        <div layout="row" flex layout-wrap>
+            <div flex-gt-sm="{{method.size}}" flex="100" ng-repeat="method in saathiCtrl.methods">
+             <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">{{method.name}}</span>
+                    <span class="md-subhead">{{method.desc}}</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img ng-src="{{method.thumb}}" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
       </div>
     </md-content>
   </md-tab>
@@ -68,12 +96,33 @@
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Deliverables</h1>
         <div layout="row" flex layout-wrap>
-          <div flex-gt-sm="80" flex="100" >
-            <md-card>
-              <img ng-repeat="deliverable in saathiCtrl.deliverables" ng-src="{{deliverable}}" class="md-card-image">
-            </md-card>
+            <div flex-gt-sm="80" flex="100">
+              <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">Video Submission</span>
+                    <span class="md-subhead">Conceptualisation and Product Video</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <iframe src="https://www.youtube.com/embed/nbS9dEYc8c0" 
+                frameborder="0" allowfullscreen>
+                </iframe>
+              </md-card>
+            </div>
+            <div flex-gt-sm="{{deliverable.size}}" flex="100" ng-repeat="deliverable in saathiCtrl.deliverables">
+              <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">{{deliverable.name}}</span>
+                    <span class="md-subhead">{{deliverable.desc}}</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img ng-src="{{deliverable.thumb}}" class="md-card-image">
+              </md-card>
+            </div>
           </div>
-        </div>
       </div>
     </md-content>
   </md-tab>

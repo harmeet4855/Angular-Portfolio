@@ -90,7 +90,7 @@ md-sidenav {
 
 md-card-actions>.md-button{
     text-transform: capitalize !important;
-    color: #0088ff !important;
+    color: #E7145B !important;
 }
 
 .md-list-item-text > h4{
@@ -154,12 +154,12 @@ md-content{
 
 .active {
 /*    border-right: 4px solid rgb(255,64,129);
-*/    border-right: 4px solid #0088ff;
+*/    border-right: 4px solid #E7145B;
 }
 
 md-toolbar {
-    background-color: #ffffff !important;
-    color: rgb(0, 0, 0) !important;
+    background-color: #3949AB !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .main-toolbar {
@@ -167,20 +167,20 @@ md-toolbar {
 }
 
 md-tabs-wrapper {
-    background-color: rgb(255,255,255) !important;
+    background-color: rgb(40,53,147) !important;
     z-index: 1;
     position: fixed;
     top: 64px;
     width: 100%;
 }
 
-/*#0088ff*/
+/*#E7145B*/
 /*#00984C*/
 
 md-ink-bar {
-  background: #0088ff !important;
+  background: #E7145B !important;
     height: 3px;
-    /*bottom: auto;*/
+    bottom: auto;
 }
 
 md-tabs-content-wrapper {
@@ -188,7 +188,7 @@ md-tabs-content-wrapper {
 }
 
 .toolbar-icons {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .navigate-up {
@@ -203,32 +203,31 @@ md-list {
 .profile > button {
     padding-top: 17px !important;
     padding-bottom: 17px !important;
-    background: #ffffff;
+    background: #3949ab;
 }
 .profile > button:hover {
-    background: #ffffff !important;
+    background: #3949ab !important;
 }
 
 .profile > button > div {
     font-size: 28px;
 /*    color: #7AD3BE;
 */ 
-    color: #000000;
+    color: #ffffff;
    font-weight: 300;
    font-family: 'ProductSans-Regular';
 }
 
 .md-avatar {
     margin-top: 0px !important;
-    width: 150px !important;
-    margin-right: 0px !important;
-    height: 150px !important;
+    width: 70px !important;
+    height: 70px !important;
 }
 
 md-list-item > a:hover,
 md-list-item > button:hover {
     background-color: rgba(158, 158, 158, 0.09) !important;
-    /*border-right: 4px solid #0088ff;*/
+    /*border-right: 4px solid #E7145B;*/
 }
 
 md-list-item > a {
@@ -255,7 +254,7 @@ md-grid-tile {
 }
 
 .md-fab{
-  background-color: #0088ff  !important;
+  background-color: #E7145B  !important;
   position: fixed;
   right: 2%;
   bottom: 2%;
@@ -292,12 +291,7 @@ md-grid-tile {
 }
 
 md-tab-item>span {
-    color: rgb(0, 0, 0);
-}
-
-md-tabs-wrapper{
-  border-bottom: 0px !important;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    color: rgb(255, 255, 255);
 }
 
 #hidden-menu{

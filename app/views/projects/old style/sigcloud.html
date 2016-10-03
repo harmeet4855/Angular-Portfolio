@@ -1,0 +1,132 @@
+<md-tabs md-dynamic-height md-border-bottom>
+  <md-tab label="Brief">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Brief</h1>
+        <div layout="row" flex layout-wrap>
+          <md-list-item flex-gt-md="50" flex="100" class="summary-header md-3-line md-long-text">
+	        <div class="md-list-item-text">
+	          <div>
+		            <p class="project-brief">
+		                <span>
+		                    <strong>
+		                        <span>Project Description</span>:
+		                    </strong> 
+		                    Intern based work done on a use-case SigCloud, which caters to providing packages of big data services on cluster of nodes/machines/instances launched by a company on cloud network.
+		                </span>
+		                <br>
+		                <span>
+		                    <strong>
+		                        <span>Project Status</span>:
+		                    </strong> 
+		                    Front-End Development Complete
+		                </span>
+		                <br>
+		                <span>
+		                    <strong>
+		                        <span>Client</span>:
+		                    </strong>
+		                    Sigmoid, Bengaluru
+		                </span>
+		                <br>
+		                <span>
+		                    <strong>
+		                        <span>Guide</span>:
+		                    </strong> 
+		                    Asit Parija
+		                </span>
+		                <br>
+		                <span>
+		                    <strong>
+		                        <span>Project Duration</span>:
+		                    </strong>
+		                    May - Jun'15
+		                </span>
+		                <br>
+		                <span>
+		                    <strong>
+		                        <span>Design Responsibilities</span>:
+		                    </strong>
+		                    Understanding users and their goals, competitive analysis, information architecture, wireframes, icons.
+		                </span>
+		                <br>
+		                <span>
+		                    <strong>
+		                        <span>Technical Responsibilities</span>:
+		                    </strong>
+		                    Basic structure/layout &amp; functionalityof the pages achieved using HTML5, CSS3, Bootstrap, Jquery etc. Advanced usage of Angular.js framework for creating repetitve structures and hierarchy at many places. Use of Angular-$http,$timeout services for continous polling of data from Node.js server.
+		                </span>
+		            </p>
+		        </div>
+	        </div>
+	      </md-list-item>
+	      <div class="use-case" flex-gt-md="80" flex="100">
+              <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">Use Case</span>
+                    <span class="md-subhead">Infographic</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img src="images/sigcloud/use-case.jpg" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </md-content>
+  </md-tab>
+  <md-tab label="Methodology">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Methodology</h1>
+        <div layout="row" flex layout-wrap>
+	          <div flex-gt-sm="{{method.size}}" flex="100" ng-repeat="method in sigcloudCtrl.methods">
+	         	 <md-card>
+			          <md-card-header>
+				          <md-card-header-text>
+				            <span class="md-title">{{method.name}}</span>
+				            <span class="md-subhead">{{method.desc}}</span>
+				          </md-card-header-text>
+				        </md-card-header>
+				        <md-divider></md-divider>
+		          	<img ng-src="{{method.thumb}}" class="md-card-image">
+		          </md-card>
+	          </div>
+          </div>
+      </div>
+    </md-content>
+  </md-tab>
+  <md-tab label="Deliverables">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Deliverables</h1>
+        <div layout="row" flex layout-wrap>
+<!-- 	          <md-list-item  flex="100" class="summary-header md-3-line md-long-text">
+		        	<div class="md-list-item-text">
+		        		<p>
+		        			Web development is a broad term for the work involved in developing a web site for the Internet
+				          (World Wide Web) or an intranet (a private network). Web development can range from developing the simplest
+				          static single page of plain text to the most complex web-based internet applications, electronic businesses, and
+				          social network services.
+		        		</p>
+		        	</div>
+	          </md-list-item> -->
+	          <div flex-gt-md="30" flex="100" ng-repeat="deliverable in sigcloudCtrl.deliverables">
+		          <md-card>
+			          <md-card-header>
+				          <md-card-header-text>
+				            <span class="md-title">{{deliverable.name}}</span>
+				            <span class="md-subhead">{{deliverable.desc}}</span>
+				          </md-card-header-text>
+				        </md-card-header>
+				        <md-divider></md-divider>
+		          	<img ng-src="{{deliverable.thumb}}" class="md-card-image">
+		          </md-card>
+	          </div>
+          </div>
+      </div>
+    </md-content>
+  </md-tab>
+</md-tabs>

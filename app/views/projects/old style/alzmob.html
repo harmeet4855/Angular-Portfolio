@@ -1,0 +1,116 @@
+<md-tabs md-dynamic-height md-border-bottom>
+  <md-tab label="Brief">
+    <md-content class="content-bg" layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Brief</h1>
+        <div layout="row" flex layout-wrap>
+          <md-list-item flex-gt-md="50" flex="100" class="summary-header md-3-line md-long-text">
+            <div class="md-list-item-text">
+              <div>
+                  <p class="project-brief">
+                      <span>
+                          <strong>
+                              <span>Project Description</span>:
+                          </strong> 
+                          Alz-Mob is a customized mobile phone catering the demands and goals of Alzheimer patients. It builds upon assumptions based on movable buttons in 3D space matrix, and contextually adjusts gutter space and evident buttons on panel.
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Project Status</span>:
+                          </strong> 
+                          Complete with examples of Scenarios with the device.
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Client</span>:
+                          </strong>
+                          Course(Design Analysis) Project
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Guide</span>:
+                          </strong> 
+                          Asst. Prof. Prasad Bokil
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Project Duration</span>:
+                          </strong>
+                          Sep'15 - Nov'15
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Design Responsibilities</span>:
+                          </strong>
+                          Literature review about Alzheiemer and its effects was done. Further work involved creating personas and applying FBS Ontology to conceptualize a mobile phone which catered to various scenarios of the user’s life.
+                      </span>
+                      <br>
+                  </p>
+              </div>
+            </div>
+          </md-list-item>
+          <div class="use-case" flex-gt-md="80" flex="100">
+             <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">Use Case</span>
+                    <span class="md-subhead">Infographic</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img src="images/mobcustom/mobcustom_1.jpg" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </md-content>
+  </md-tab>
+  <md-tab label="Methodology">
+    <md-content class="content-bg" layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Methodology</h1>
+        <div layout="row" flex layout-wrap>
+            <div flex-gt-md="{{method.size}}" flex="100" ng-repeat="method in alzmobCtrl.methods">
+              <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">{{method.name}}</span>
+                    <span class="md-subhead">{{method.desc}}</span>
+                  </md-card-header-text>
+                </md-card-header> 
+                <md-divider></md-divider>
+                <img ng-src="{{method.thumb}}" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
+      </div>
+    </md-content>
+  </md-tab>
+  <md-tab label="Deliverables">
+    <md-content class="content-bg" layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Deliverables</h1>
+        <div layout="row" flex layout-wrap>
+            <div flex-gt-md="{{deliverable.size}}" ng-repeat="deliverable in alzmobCtrl.deliverables" ng-src="{{deliverable.thumb}}" flex="100">
+              <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">{{deliverable.name}}</span>
+                    <span class="md-subhead">{{deliverable.desc}}</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img ng-src="{{deliverable.thumb}}" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
+      </div>
+    </md-content>
+  </md-tab>
+</md-tabs>

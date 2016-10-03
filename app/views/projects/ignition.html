@@ -12,42 +12,49 @@
                           <strong>
                               <span>Project Description</span>:
                           </strong> 
-                          Submission for Student Design Competition, for CHI’16 Conference. Had to come up with an assistive technology for users that present different and often challenging needs. Came up with Saathi, a smart watch which taps the problem of lack of time perception amongst children with learning disabilities, by displaying time in the form of visuals, audio feedback and images from the daily life of children, the ones they are familiar with.
+                          This project explores the journey that a service-based startup
+                          goes through starting from the point of inception to expanding
+                          into a full-fledged company. Towards the end,
+                          based on our system design, analysis of subsystems, the
+                          relationships and the gaps between them, we develop a
+                          solution which could assist a startup into its growth into an
+                          established company.
                       </span>
                       <br>
                       <span>
                           <strong>
                               <span>Project Status</span>:
                           </strong> 
-                          Selected in top 12 teams in the Student Design Competition held internationally. Also Research paper accepted to be presented at CHI’16 Conference to be held in San Jose, California. 
+                          Completed Design Part(Without evaluation)
                       </span>
                       <br>
                       <span>
                           <strong>
                               <span>Client</span>:
                           </strong>
-                          ACM-CHI'16 Student Design Competition
+                          Course(System's Approach to Design) Project 
                       </span>
                       <br>
                       <span>
                           <strong>
                               <span>Guide</span>:
                           </strong> 
-                          Asst. Prof. Abhishek Srivastava 
+                          Asst. Prof. Pratul Kalita 
                       </span>
                       <br>
                       <span>
                           <strong>
                               <span>Project Duration</span>:
                           </strong>
-                          Oct'15 - Jan'16
+                          Sep'15 - Nov'15
                       </span>
                       <br>
                       <span>
                           <strong>
                               <span>Design Responsibilities</span>:
                           </strong>
-                          Work involved literature review, Field Visits and Contextual Inquiry, Competitor analysis, Affinity Analysis, Brainstorming, Information Architecture, Prototyping, User Testing and Evaluation.
+                          Work involved Problem identification, Literature Review, Expert Interviews and Card Sorting, Defning relationships
+                          and gaps, Generating Data Flow Diagram, Developing system defnition, Ideation, Conceptualising Final Solution, Wireframing.
                       </span>                    
                   </p>
               </div>
@@ -55,7 +62,7 @@
           </md-list-item>
           <div class="use-case" flex-gt-md="80" flex="100">
              <md-card>
-                <img ng-repeat="image in saathiCtrl.images" ng-src="{{image}}" class="md-card-image">
+                <img ng-repeat="image in ignitionCtrl.images" ng-src="{{image}}" class="md-card-image">
               </md-card>
             </div>
           </div>
@@ -63,14 +70,35 @@
       </div>
     </md-content>
   </md-tab>
+<!--   <md-tab label="Methodology">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <h1 class="projects-type md-display-1">Methodology</h1>
+        <div layout="row" flex layout-wrap>
+            <div flex-gt-sm="{{method.size}}" flex="100" ng-repeat="method in ignitionCtrl.methods">
+             <md-card>
+                <md-card-header>
+                  <md-card-header-text>
+                    <span class="md-title">{{method.name}}</span>
+                    <span class="md-subhead">{{method.desc}}</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-divider></md-divider>
+                <img ng-src="{{method.thumb}}" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
+      </div>
+    </md-content>
+  </md-tab> -->
   <md-tab label="Deliverables">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Deliverables</h1>
         <div layout="row" flex layout-wrap>
-          <div flex-gt-sm="80" flex="100" >
+          <div flex-gt-sm="80" flex="100">
             <md-card>
-              <img ng-repeat="deliverable in saathiCtrl.deliverables" ng-src="{{deliverable}}" class="md-card-image">
+              <img  ng-repeat="deliverable in ignitionCtrl.deliverables" ng-src="{{deliverable}}" class="md-card-image">
             </md-card>
           </div>
         </div>
