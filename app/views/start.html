@@ -1,6 +1,6 @@
 <!-- <md-progress-linear md-mode="indeterminate" ng-show="startCtrl.isLoading"></md-progress-linear> -->
 <section layout="row" flex>
-  <md-sidenav class="md-sidenav-left md-whiteframe-z2" flex-lg="20" md-component-id="left"
+  <md-sidenav md-swipe-left="startCtrl.checkSidenavCloseScreen()" class="md-sidenav-left md-whiteframe-z2" flex-lg="20" md-component-id="left"
               md-is-locked-open="$mdMedia('gt-md')">
     <md-toolbar hide-gt-md class="md-whiteframe-z2">
       <div class="md-toolbar-tools">
@@ -31,6 +31,21 @@
           <h4>Experience</h4>
         </div>
       </md-list-item> -->
+      <md-list-item>
+        <!-- <md-icon>person</md-icon> -->
+          <p class="about-label">About Me</p>
+          <md-button class="md-icon-button" layout-align="">
+            <md-icon id="hidden-about">arrow_drop_down</md-icon>
+            <md-icon id="visible-about">arrow_drop_up</md-icon>
+          </md-button>
+      </md-list-item>
+      <md-list-item id="profile-about">
+        <!-- <md-icon>person</md-icon> -->
+        <div layout-align="center center" layout="column">
+          <p class="md-body-1" style="padding-bottom: 5px;">Hey there, I am Harmeet and I love to work on diverse design projetcs for diverse people, because I guess diversity is indeed beautiful. I've been doing a lot of Service Design projects lately, and am interested in finding new and exciting applications for it in different fields. I love learning new technologies, and skills and am always on the lookout for new challenges.</p>
+        </div>
+      </md-list-item>
+      <md-divider></md-divider>
       <md-list-item ng-click="startCtrl.checkSidenavCloseScreen()" ui-sref-active="active" ui-sref="start.projects" class="md-2-line">
         <md-icon>view_list</md-icon>
         <div class="md-list-item-text" layout="column">
@@ -68,8 +83,8 @@
         <span flex></span>
         <md-button hide-gt-sm class="md-icon-button ad"
            aria-label="Menu Visibility">
-          <md-icon class="toolbar-icons" id="visible-menu">arrow_drop_down</md-icon>
-          <md-icon class="toolbar-icons" id="hidden-menu">arrow_drop_up</md-icon>
+          <md-icon class="toolbar-icons" id="hidden-menu">arrow_drop_down</md-icon>
+          <md-icon class="toolbar-icons" id="visible-menu">arrow_drop_up</md-icon>
         </md-button>
       </div>
     </md-toolbar>

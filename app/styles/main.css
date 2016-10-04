@@ -200,6 +200,19 @@ md-list {
     padding: 0px;
 }
 
+.about-label{
+  padding-left: 16px !important;
+  color: rgb(0, 136, 255);
+}
+
+#profile-about{
+  display: none;
+}
+
+#visible-about{
+    display:none;
+}
+
 .profile > button {
     padding-top: 17px !important;
     padding-bottom: 17px !important;
@@ -241,7 +254,7 @@ md-list-item > a > div {
 }
 
 md-list-item > button > div {
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 }
 
 md-grid-list {
