@@ -21,9 +21,22 @@
         'images/anigo/4.png'
       ]
 
+      // vm.deliverables = [
+      //   'images/anigo/3.gif',
+      //   'images/anigo/4.png'
+      // ]
+
       vm.deliverables = [
-        'images/anigo/3.gif',
-        'images/anigo/4.png'
+        {
+          name: 'User Story',
+          desc: 'UNDERSTANDING THE WORKING USING A STORY',
+          thumb: 'images/anigo/deliverable_1.gif'
+        },
+        {
+          name: 'Comps',
+          desc: "FINAL UI'S",
+          thumb: 'images/anigo/deliverable_2.png'
+        }
       ]
 
       //Declare methods here

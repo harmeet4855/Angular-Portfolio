@@ -20,8 +20,21 @@
         'images/ignition/3.png'
       ]
 
+      // vm.deliverables = [
+      //   'images/ignition/3.png'
+      // ]
+
       vm.deliverables = [
-        'images/ignition/3.png'
+        {
+          name: 'Ignition Concept',
+          desc: 'CONCEPT & MAIN FEATURES',
+          thumb: 'images/ignition/deliverable_1.png'
+        },
+        {
+          name: 'Layouts',
+          desc: "WIREFRAMES",
+          thumb: 'images/ignition/deliverable_2.png'
+        }
       ]
 
       //Declare methods here

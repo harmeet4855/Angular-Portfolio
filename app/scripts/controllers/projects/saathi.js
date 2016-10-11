@@ -20,8 +20,21 @@
         'images/saathi/3.png'
       ]
 
+      // vm.deliverables = [
+      //   'images/saathi/3.png'
+      // ]
+
       vm.deliverables = [
-        'images/saathi/3.png'
+        {
+          name: 'Saathi-Gear',
+          desc: 'WORKING LAYOUTS AND FEATURES',
+          thumb: 'images/saathi/deliverable_2.png'
+        },
+        {
+          name: 'Saathi-App',
+          desc: "FINAL UI'S AND FEATURES",
+          thumb: 'images/saathi/deliverable_3.png'
+        }
       ]
 
       //Declare methods here

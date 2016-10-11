@@ -1,5 +1,5 @@
 <md-tabs md-dynamic-height md-border-bottom>
-  <md-tab label="Brief">
+  <md-tab label="Project-Detailed">
     <md-content class="content-bg" layout-padding>
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Brief</h1>
@@ -55,61 +55,53 @@
             </div>
           </md-list-item>
           <div class="use-case" flex-gt-md="80" flex="100">
-             <md-card>
-                <md-card-header>
-                  <md-card-header-text>
-                    <span class="md-title">Use Case</span>
-                    <span class="md-subhead">Infographic</span>
-                  </md-card-header-text>
-                </md-card-header>
-                <md-divider></md-divider>
-                <img src="images/mobcustom/mobcustom_1.jpg" class="md-card-image">
-              </md-card>
-            </div>
+            <md-card>
+              <img ng-repeat="image in alzmobCtrl.images" ng-src="{{image}}" class="md-card-image">
+            </md-card>
           </div>
         </div>
       </div>
     </md-content>
   </md-tab>
-  <md-tab label="Methodology">
+  <!-- <md-tab label="Methodology">
     <md-content class="content-bg" layout-padding>
       <div layout="column" class="projects-type-header">
         <h1 class="projects-type md-display-1">Methodology</h1>
         <div layout="row" flex layout-wrap>
-            <div flex-gt-md="{{method.size}}" flex="100" ng-repeat="method in alzmobCtrl.methods">
-              <md-card>
-                <md-card-header>
-                  <md-card-header-text>
-                    <span class="md-title">{{method.name}}</span>
-                    <span class="md-subhead">{{method.desc}}</span>
-                  </md-card-header-text>
-                </md-card-header> 
-                <md-divider></md-divider>
-                <img ng-src="{{method.thumb}}" class="md-card-image">
-              </md-card>
-            </div>
+          <div flex-gt-md="{{method.size}}" flex="100" ng-repeat="method in alzmobCtrl.methods">
+            <md-card>
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">{{method.name}}</span>
+                  <span class="md-subhead">{{method.desc}}</span>
+                </md-card-header-text>
+              </md-card-header> 
+              <md-divider></md-divider>
+              <img ng-src="{{method.thumb}}" class="md-card-image">
+            </md-card>
           </div>
+        </div>
       </div>
     </md-content>
-  </md-tab>
+  </md-tab> -->
   <md-tab label="Deliverables">
     <md-content class="content-bg" layout-padding>
       <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">Deliverables</h1>
+        <!-- <h1 class="projects-type md-display-1">Deliverables</h1> -->
         <div layout="row" flex layout-wrap>
-            <div flex-gt-md="{{deliverable.size}}" ng-repeat="deliverable in alzmobCtrl.deliverables" ng-src="{{deliverable.thumb}}" flex="100">
-              <md-card>
-                <md-card-header>
-                  <md-card-header-text>
-                    <span class="md-title">{{deliverable.name}}</span>
-                    <span class="md-subhead">{{deliverable.desc}}</span>
-                  </md-card-header-text>
-                </md-card-header>
-                <md-divider></md-divider>
-                <img ng-src="{{deliverable.thumb}}" class="md-card-image">
-              </md-card>
-            </div>
+          <div flex-gt-md="80" ng-repeat="deliverable in alzmobCtrl.deliverables" flex="100">
+            <md-card>
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">{{deliverable.name}}</span>
+                  <span class="md-subhead">{{deliverable.desc}}</span>
+                </md-card-header-text>
+              </md-card-header>
+              <md-divider></md-divider>
+              <img ng-src="{{deliverable.thumb}}" class="md-card-image">
+            </md-card>
           </div>
+        </div>
       </div>
     </md-content>
   </md-tab>

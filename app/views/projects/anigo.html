@@ -74,11 +74,18 @@
   <md-tab label="Deliverables">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">Deliverables</h1>
+        <!-- <h1 class="projects-type md-display-1">Deliverables</h1> -->
         <div layout="row" flex layout-wrap>
-          <div flex-gt-md="80" flex="100">
+          <div flex-gt-md="80" flex="100" ng-repeat="deliverable in anigoCtrl.deliverables">
             <md-card>
-              <img ng-repeat="deliverable in anigoCtrl.deliverables" ng-src="{{deliverable}}" class="md-card-image">
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">{{deliverable.name}}</span>
+                  <span class="md-subhead">{{deliverable.desc}}</span>
+                </md-card-header-text>
+              </md-card-header>
+              <md-divider></md-divider>
+              <img ng-src="{{deliverable.thumb}}" class="md-card-image">
             </md-card>
           </div>
         </div>

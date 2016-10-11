@@ -42,7 +42,7 @@
       <md-list-item id="profile-about">
         <!-- <md-icon>person</md-icon> -->
         <div layout-align="center center" layout="column">
-          <p class="md-body-1" style="padding-bottom: 5px;">Hey there, I am Harmeet and I love to work on diverse design projetcs for diverse people, because I guess diversity is indeed beautiful. I've been doing a lot of Service Design projects lately, and am interested in finding new and exciting applications for it in different fields. I love learning new technologies, and skills and am always on the lookout for new challenges.</p>
+          <p class="md-body-1" style="padding-bottom: 5px;">Hey there, I am Harmeet and I love to work on diverse design projects with diverse challenges and opportunities. I've been doing a lot of Service Design projects lately, and am interested in finding new and exciting applications for it in different fields. I love learning new technologies, and skills and am always on the lookout for new challenges.</p>
         </div>
       </md-list-item>
       <md-divider></md-divider>
@@ -89,12 +89,29 @@
       </div>
     </md-toolbar>
     <div ui-view=""></div>
-    <md-button ng-click="startCtrl.goToProjects()" class="md-fab md-accent" aria-label="Projects">
+    <!-- <md-button ng-if="startCtrl.hasNavigateUp()" ng-click="startCtrl.goToProjects()" class="md-fab md-accent" aria-label="Projects">
         <md-tooltip md-direction="top">
           Projects
         </md-tooltip>
         <md-icon>home</md-icon>
-    </md-button>
+    </md-button> -->
+    <md-fab-speed-dial ng-cloak ng-if="startCtrl.hasNavigateUp()" md-direction="up" md-open="startCtrl.isFabOpen" class="md-scale"  ng-mouseenter="startCtrl.isFabOpen=true" ng-mouseleave="startCtrl.isFabOpen=false">
+      <md-fab-trigger>
+        <md-button aria-label="menu" class="md-fab">
+          <md-tooltip md-direction="left">
+            Projects
+          </md-tooltip>
+          <md-icon>view_list</md-icon>
+        </md-button>
+      </md-fab-trigger>
+
+      <md-fab-actions>
+        <md-button ng-repeat="project in startCtrl.projects" aria-label="{{project.name}}" ng-click="startCtrl.goToProject(project.state)" class="md-fab ">
+          <md-tooltip md-direction="left">{{project.name}}</md-tooltip>
+          <md-icon class="project-fabs" md-svg-src="{{project.thumb}}"></md-icon>
+        </md-button>
+      </md-fab-actions>
+    </md-fab-speed-dial>
   </div>
 </section>
 

@@ -153,7 +153,7 @@ angular.module('portfolioApp', [
       .state('start.resume', {
         url: 'resume',
         templateUrl: 'views/resume.html',
-        navigateUp: 'start.projects',
+        // navigateUp: 'start.projects',
         titlename: 'Resume'
       })
       .state('start.contact', {
@@ -161,7 +161,7 @@ angular.module('portfolioApp', [
         templateUrl: 'views/contact.html',
         controller: 'ContactController',
         controllerAs: 'contactCtrl',
-        navigateUp: 'start.projects',
+        // navigateUp: 'start.projects',
         titlename: 'Contact Me'
       });
 

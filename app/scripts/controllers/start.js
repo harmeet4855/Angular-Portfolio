@@ -17,6 +17,44 @@
       vm.currentTitle = 'Highlights';
       vm.isLoading = true;
       vm.hasMenu = true;
+      vm.isFabOpen = false;
+      vm.projects = [
+        {
+          name: 'Adobe-Anigo',
+          thumb: 'images/covers/svg/covers-08.svg',
+          state: 'start.anigo'
+        },
+        {
+          name: 'Saathi',
+          thumb: 'images/covers/svg/covers-02.svg',
+          state: 'start.saathi'
+        },
+        {
+          name: 'Ignition',
+          thumb: 'images/covers/svg/covers-07.svg',
+          state: 'start.ignition'
+        },
+        {
+          name: 'Sigcloud',
+          thumb: 'images/covers/svg/covers-03.svg',
+          state: 'start.sigcloud'
+        },
+        {
+          name: 'Sociotags',
+          thumb: 'images/covers/svg/covers-05.svg',
+          state: 'start.sociotags'
+        },
+        {
+          name: 'MedTour',
+          thumb: 'images/covers/svg/covers-04.svg',
+          state: 'start.medtour'
+        },
+        {
+          name: 'Alz-Mob',
+          thumb: 'images/covers/svg/covers-06.svg',
+          state: 'start.alzmob'
+        }
+      ];
 
       //Declare methods here
       vm.hasNavigateUp = hasNavigateUp;
@@ -28,22 +66,11 @@
       vm.toolbarTitle = toolbarTitle;
       vm.checkSidenavCloseScreen = checkSidenavCloseScreen;
       vm.goToProjects = goToProjects;
+      vm.goToProject = goToProject;
       // vm.hasMenu = hasMenu;
 
       $rootScope.$on('$stateChangeSuccess', toolbarTitle);
       toolbarTitle();
-
-      // document.addEventListener("load", function(event) {
-      //   vm.isLoading = false;
-      // });  
-
-      // $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-      //   vm.isLoading = true;
-      // });
-
-      // $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-      //   vm.isLoading = false;
-      // });
 
       function hasNavigateUp() {
         return angular.isDefined($state.current.navigateUp);
@@ -92,6 +119,29 @@
         $state.go('start.projects');
       }
 
+      function goToProject(state){
+        if(state === 'start.medtour'){
+          window.open(
+            'https://instructionaldesignisfun.wordpress.com/2016/04/07/taking-out-the-load-from-a-medical-tourists-journey/',
+            '_blank' // <- This is what makes it open in a new window.
+          );
+        }
+        else{
+          $state.go(state);
+        }        
+      }
+
+      // On opening, add a delayed property which shows tooltips after the speed dial has opened
+      // so that they have the proper position; if closing, immediately hide the tooltips
+      // vm.$watch('vm.isFabOpen', function(isOpen) {
+      //   if (isOpen) {
+      //     $timeout(function() {
+      //       $scope.tooltipVisible = self.isOpen;
+      //     }, 600);
+      //   } else {
+      //     $scope.tooltipVisible = self.isOpen;
+      //   }
+      // });
       // function hasMenu(){
 
       // }

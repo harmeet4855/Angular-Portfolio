@@ -25,7 +25,5 @@ $( document ).ready(function() {
             $("#hidden-about").fadeOut();
             $("#visible-about").fadeIn();
         });
-
-
     }, 2000);
 });

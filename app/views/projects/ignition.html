@@ -70,35 +70,21 @@
       </div>
     </md-content>
   </md-tab>
-<!--   <md-tab label="Methodology">
-    <md-content layout-padding>
-      <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">Methodology</h1>
-        <div layout="row" flex layout-wrap>
-            <div flex-gt-sm="{{method.size}}" flex="100" ng-repeat="method in ignitionCtrl.methods">
-             <md-card>
-                <md-card-header>
-                  <md-card-header-text>
-                    <span class="md-title">{{method.name}}</span>
-                    <span class="md-subhead">{{method.desc}}</span>
-                  </md-card-header-text>
-                </md-card-header>
-                <md-divider></md-divider>
-                <img ng-src="{{method.thumb}}" class="md-card-image">
-              </md-card>
-            </div>
-          </div>
-      </div>
-    </md-content>
-  </md-tab> -->
   <md-tab label="Deliverables">
     <md-content layout-padding>
       <div layout="column" class="projects-type-header">
-        <h1 class="projects-type md-display-1">Deliverables</h1>
+        <!-- <h1 class="projects-type md-display-1">Deliverables</h1> -->
         <div layout="row" flex layout-wrap>
-          <div flex-gt-sm="80" flex="100">
+          <div flex-gt-sm="80" flex="100" ng-repeat="deliverable in ignitionCtrl.deliverables">
             <md-card>
-              <img  ng-repeat="deliverable in ignitionCtrl.deliverables" ng-src="{{deliverable}}" class="md-card-image">
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">{{deliverable.name}}</span>
+                  <span class="md-subhead">{{deliverable.desc}}</span>
+                </md-card-header-text>
+              </md-card-header>
+              <md-divider></md-divider>
+              <img ng-src="{{deliverable.thumb}}" class="md-card-image">
             </md-card>
           </div>
         </div>

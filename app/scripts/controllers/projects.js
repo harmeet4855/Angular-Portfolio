@@ -46,6 +46,15 @@
         },
         {
           ux: 1,
+          web: 1,
+          name: 'Sigcloud',
+          thumb: 'images/covers/covers-03.jpg',
+          state: 'start.sigcloud',
+          keywords: 'Big Data | Cloud Comp',
+          desc: 'SigCloud caters to easy deployment of packages of big data services on cloud based infrastructure, along with the provision of monitoring & management capabilities for the infrastructure deployed on cloud...'
+        },
+        {
+          ux: 1,
           web: 0,
           name: 'Sociotags',
           thumb: 'images/covers/covers-05.jpg',
@@ -53,15 +62,6 @@
           keywords: 'Social Interaction | Airports',
           desc: 'Sociotags are color coded smart tags, brought in place of Airport handbag tags, which tries to cater the problem of social isolation by depicting similar interests in people travelling and motivating them to interact...'
         },
-        {
-          ux: 1,
-          web: 1,
-          name: 'Sigcloud',
-          thumb: 'images/covers/covers-03.jpg',
-          state: 'start.sigcloud',
-          keywords: 'Big Data | Cloud Comp',
-          desc: 'SigCloud caters to easy deployment of packages of big data services on cloud based infrastructure, along with the provision of monitoring & management capabilities for the infrastructure deployed on cloud...'
-        },        
         {
           ux: 1,
           web: 0,
