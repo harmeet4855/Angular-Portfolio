@@ -25,5 +25,17 @@ $( document ).ready(function() {
             $("#hidden-about").fadeOut();
             $("#visible-about").fadeIn();
         });
+
+        $("md-tab-item").click(function(){
+            $('html, body').animate({scrollTop : 0},1000);
+            return false;
+        });
+
+        $(window).on('hashchange', function(e){
+            $("md-tab-item").click(function(){
+                $('html, body').animate({scrollTop : 0},1000);
+                return false;
+            });
+        });
     }, 2000);
 });

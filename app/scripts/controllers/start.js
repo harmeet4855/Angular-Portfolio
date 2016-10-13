@@ -142,6 +142,7 @@
       //     $scope.tooltipVisible = self.isOpen;
       //   }
       // });
+      
       // function hasMenu(){
 
       // }
