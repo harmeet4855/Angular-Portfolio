@@ -17,7 +17,8 @@
       vm.images = [
         'images/ignition/1.png',
         'images/ignition/2.png',
-        'images/ignition/3.png'
+        'images/ignition/3.png',
+        'images/ignition/4.png'
       ]
 
       // vm.deliverables = [
