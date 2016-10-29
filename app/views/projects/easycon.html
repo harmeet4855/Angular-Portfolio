@@ -1,0 +1,99 @@
+<md-tabs md-dynamic-height md-border-bottom>
+  <md-tab label="Project-Detailed">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <!-- <h1 class="projects-type md-display-1">Brief</h1> -->
+        <div layout="row" flex layout-wrap>
+          <md-list-item flex-gt-md="80" flex="100" class="summary-header md-3-line md-long-text">
+            <div class="md-list-item-text">
+              <div>
+                  <p class="project-brief">
+                      <span>
+                          <strong>
+                              <span>Project Description</span>:
+                          </strong> 
+                          Communicating effectively with someone who might be in the middle of another task like in a work environment has always been challenging. This project tries to tackle this problem by exploiting vibration patterns as a means of effective communication in various environments.
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Project Status</span>:
+                          </strong> 
+                          <span>Prototype and testing done, Research paper on the verge of being published at ICCCAD Conference Jan'17 to be held at Bangalore(Abstract accepted).   
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Client</span>:
+                          </strong>
+                          Course Project 
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Guide</span>:
+                          </strong> 
+                          Asst. Prof. Keyur Sorathia
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Project Duration</span>:
+                          </strong>
+                          Jan'16 - May'16
+                      </span>
+                      <br>
+                      <span>
+                          <strong>
+                              <span>Design Responsibilities</span>:
+                          </strong>
+                          Work involved Understanding the Problem, Exploring field of Tangible UI, Ideation, Competitor Analysis, Conceptualisation, Prototyping, User Testing and Statistical Evaluation.
+                      </span>                    
+                  </p>
+              </div>
+            </div>
+          </md-list-item>
+          <div class="use-case" flex-gt-md="80" flex="100">
+             <md-card>
+                <img ng-repeat="image in easyconCtrl.images" ng-src="{{image}}" class="md-card-image">
+              </md-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </md-content>
+  </md-tab>
+  <md-tab label="Deliverables">
+    <md-content layout-padding>
+      <div layout="column" class="projects-type-header">
+        <!-- <h1 class="projects-type md-display-1">Deliverables</h1> -->
+        <div layout="row" flex layout-wrap>
+          <div flex-gt-md="80" flex="100" ng-repeat="deliverable in easyconCtrl.deliverables">
+            <md-card>
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">{{deliverable.name}}</span>
+                  <span class="md-subhead">{{deliverable.desc}}</span>
+                </md-card-header-text>
+              </md-card-header>
+              <md-divider></md-divider>
+              <img ng-src="{{deliverable.thumb}}" class="md-card-image">
+            </md-card>
+          </div>
+          <div flex="100">
+            <md-card>
+              <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">Published Paper</span>
+                  <span class="md-subhead">PAPER PUBLICATION IN PROGRESS</span>
+                </md-card-header-text>
+              </md-card-header>
+              <md-divider></md-divider>
+              <object class="resume" data="images/easycon/paper.pdf"></object>
+            </md-card>
+          </div>
+        </div>
+      </div>
+    </md-content>
+  </md-tab>
+</md-tabs>

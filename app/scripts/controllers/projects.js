@@ -47,6 +47,15 @@
         {
           ux: 1,
           web: 1,
+          name: 'Easycon',
+          thumb: 'images/covers/covers-10.jpg',
+          state: 'start.easycon',
+          keywords: 'Wearables | Vibrations',
+          desc: 'Communicating effectively with someone in a work-like environment has always been challenging. This project tries to tackle this problem by exploiting vibration patterns as a means of effective communication in various environments.'
+        },
+        {
+          ux: 1,
+          web: 1,
           name: 'Sigcloud',
           thumb: 'images/covers/covers-03.jpg',
           state: 'start.sigcloud',

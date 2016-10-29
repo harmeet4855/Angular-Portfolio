@@ -17,8 +17,9 @@
       vm.images = [
         'images/anigo/1.png',
         'images/anigo/2.png',
-        'images/anigo/3.gif',
-        'images/anigo/4.png'
+        'images/anigo/3.png',
+        'images/anigo/4.gif',
+        'images/anigo/5.png'
       ]
 
       // vm.deliverables = [

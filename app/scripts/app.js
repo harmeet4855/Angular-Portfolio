@@ -69,6 +69,14 @@ angular.module('portfolioApp', [
           navigateUp: 'start.projects',
           titlename: 'Sociotags'
         })
+        .state('start.easycon', {
+          url: 'easycon',
+          templateUrl: 'views/projects/easycon.html',
+          controller: 'EasyconController',
+          controllerAs: 'easyconCtrl',
+          navigateUp: 'start.projects',
+          titlename: 'Easycon'
+        })
         .state('start.saathi', {
           url: 'saathi',
           templateUrl: 'views/projects/saathi.html',
