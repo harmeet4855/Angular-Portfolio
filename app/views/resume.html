@@ -1,14 +1,17 @@
 <md-content class="general-content layout-padding"> 
-  <div layout="column" layout-wrap>
-	<div>
-		<md-card-actions>
-      <a class="md-button md-raised" href="resume.pdf" download><p class="md-subhead">Download Resume</p></a>
-    </md-card-actions>			
-	</div>  
-    <div  flex="100">
-      <md-card>
-        <object class="resume" data="resume.pdf"></object>
-      </md-card>
+  <div layout="column">
+  	<div>
+  		<md-card-actions>
+        <a class="md-button md-raised" href="resume.pdf" download><p class="md-subhead">Download Resume</p></a>
+      </md-card-actions>			
+  	</div>
+    <div layout="row" flex layout-wrap>  
+      <div flex-gt-md="80" flex="100">
+        <md-card>
+          <img ng-src="resume.jpg" class="md-card-image">
+          <!-- <object class="resume" data="resume.pdf"></object> -->
+        </md-card>
+      </div>
     </div>
   </div>
 </md-content>

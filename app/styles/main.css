@@ -98,9 +98,14 @@ md-card-actions>.md-button{
     color: #0088ff !important;
 }
 
-md-card-content{
+/*md-card-content{
     max-height: 100px;
     overflow: hidden;
+}*/
+
+.project-card-content{
+  max-height: 100px !important;
+  overflow: hidden !important;
 }
 
 .md-list-item-text > h4{
